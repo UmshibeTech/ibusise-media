@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Connect with Ibusise Media. Photography, videography, drone services and digital media.">
+
+    <title>IBUSISE MEDIA | Digital Connect</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.9.2/lib/qr-code-styling.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <img
+                src="assets/brand-logo.png"
+                alt="Ibusise Media Logo"
+                class="logo"
+            >
+
+            <div class="brand-copy">
+                <p class="tagline">CAPTURE <span>•</span> CREATE <span>•</span> INSPIRE</p>
+            </div>
+
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="eyebrow">
+                    WELCOME TO OUR DIGITAL WORLD
+                </span>
+
+                <h1>
+                    YOUR STORY.<br>
+                    <span>OUR VISION.</span>
+                </h1>
+
+                <p>
+                    Discover our creative work, explore our services
+                    and connect with Ibusise Media across all platforms.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="primary-link" href="https://ibusisemedia.pixieset.com/" target="_blank" rel="noopener noreferrer">
+                        Explore our portfolio <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="secondary-link" href="https://wa.me/27710664350?text=Hello%2C%20I%20would%20like%20to%20make%20a%20booking." target="_blank" rel="noopener noreferrer">
+                        Book now <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="secondary-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+                </div>
+
+                <div class="hero-label">
+                    <span class="pulse"></span>
+                    CREATIVE MEDIA • DURBAN, SOUTH AFRICA
+                </div>
+
+            </div>
+
+            <!-- QR CODE CARD -->
+            <div class="qr-card">
+
+                <div class="qr-header">
+                    <span class="live-dot"></span>
+                    IBUSISE MEDIA DIGITAL ACCESS
+                </div>
+
+                <div class="qr-frame" id="qrFrame" hidden>
+
+                    <div id="qrcode"></div>
+
+                </div>
+
+                <h3>SCAN TO CONNECT</h3>
+
+                <p class="qr-description">
+                    One scan. All our platforms.
+                </p>
+
+                <button id="downloadQR" class="download-button" disabled>
+                    <span>↓</span> DOWNLOAD QR CODE
+                </button>
+
+                <p class="qr-instruction" id="qrInstruction" hidden>
+                    Open your camera and scan the code.
+                </p>
+
+                <p id="qrStatus" class="qr-status" role="status">
+                    Preparing your QR code...
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- SOCIAL MEDIA -->
+        <section class="social-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">STAY CONNECTED</span>
+
+                <h2>
+                    Find us <span>everywhere.</span>
+                </h2>
+
+                <p>
+                    Follow our journey and discover our latest creations.
+                </p>
+
+            </div>
+
+            <div id="socialLinks" class="social-grid"></div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="services-section">
+
+            <div class="section-heading">
+                <span class="eyebrow">WHAT WE DO</span>
+                <h2>Our <span>Creative Services</span></h2>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+                            <path d="M12 22h10l4-6h12l4 6h10a4 4 0 0 1 4 4v24a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z"/>
+                            <circle cx="32" cy="37" r="10"/><circle cx="32" cy="37" r="5"/>
+                            <path d="M47 28h3"/>
+                        </g>
+                        <circle cx="32" cy="37" r="2" fill="var(--orange)"/>
+                    </svg>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and creating memories.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+                            <rect x="7" y="19" width="34" height="27" rx="4"/>
+                            <path d="m41 28 15-7v23l-15-7M17 51h24M24 46v5m10-5v5"/>
+                            <circle cx="24" cy="32.5" r="7"/>
+                        </g>
+                        <circle cx="24" cy="32.5" r="2" fill="var(--orange)"/>
+                    </svg>
+                    <h3>Videography</h3>
+                    <p>Professional filming and visual storytelling.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <svg class="service-icon drone-icon" viewBox="0 0 64 64" role="img" aria-label="Professional quadcopter drone">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <g stroke-width="2.4">
+                                <path d="m27 29-9-9m19 9 9-9M27 35l-9 9m19-9 9 9"/>
+                                <path d="M8 17h13m22 0h13M8 47h13m22 0h13"/>
+                                <path d="M14.5 13v8m35-8v8m-35 22v8m35-8v8"/>
+                            </g>
+                            <g stroke-width="1.5">
+                                <circle cx="14.5" cy="17" r="5.5"/>
+                                <circle cx="49.5" cy="17" r="5.5"/>
+                                <circle cx="14.5" cy="47" r="5.5"/>
+                                <circle cx="49.5" cy="47" r="5.5"/>
+                                <path d="M25 27.5 29 25h6l4 2.5 2 4.5-2 4.5-4 2.5h-6L25 36.5 23 32z"/>
+                                <path d="M29 39v4m6-4v4m-6 0h6m-3 0v3"/>
+                            </g>
+                        </g>
+                        <circle cx="32" cy="32" r="2" fill="var(--orange)"/>
+                        <circle cx="32" cy="48.5" r="4" fill="none" stroke="var(--orange)" stroke-width="2"/>
+                        <circle cx="32" cy="48.5" r="1.5" fill="var(--orange)"/>
+                    </svg>
+                    <h3>Drone Services</h3>
+                    <p>Aerial filming and professional perspectives.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+                            <rect x="9" y="13" width="46" height="33" rx="3"/>
+                            <path d="M9 39h46M25 46l-2 6m16-6 2 6M18 53h28M25 22l-5 5 5 5m14-10 5 5-5 5m-4-12-5 14"/>
+                        </g>
+                        <circle cx="32" cy="42.5" r="1.5" fill="var(--orange)"/>
+                    </svg>
+                    <h3>Digital Media</h3>
+                    <p>Creative digital content and media solutions.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div>
+                <span class="eyebrow">LET'S CREATE TOGETHER</span>
+                <h2 id="contact-heading">Have a story to tell?</h2>
+                <p>Get in touch with our team to discuss your next project.</p>
+            </div>
+            <a class="primary-link" href="https://wa.me/27710664350" target="_blank" rel="noopener noreferrer">
+                Chat on WhatsApp <span aria-hidden="true">↗</span>
+            </a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <h3>IBUSISE MEDIA</h3>
+
+            <p>CAPTURE. CREATE. INSPIRE.</p>
+
+            <div class="footer-line"></div>
+
+            <small>
+                © <span id="year"></span> IBUSISE MEDIA.
+                ALL RIGHTS RESERVED.
+            </small>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
